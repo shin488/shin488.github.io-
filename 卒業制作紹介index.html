@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.css">
     <style>
-        /* カスタムスタイル */
+        /* シックなパズル風背景 */
+        .reveal .slides {
+            background: url('https://sozaino.site/archives/13982') no-repeat center center;
+            background-size: cover;
+        }
+
         .reveal h1, .reveal h2 {
-            color: red;  /* 赤色に変更 */
+            color: red;  
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
         }
     </style>
@@ -18,84 +23,74 @@
     <div class="reveal">
         <div class="slides">
             <!-- 1枚目: 卒業制作発表のタイトル -->
-            <section data-transition="fade" data-background="https://sozaino.site/archives/13982">
+            <section data-transition="fade">
                 <h1>卒業制作発表 🎓</h1>
                 <h2 class="fragment fade-in">スライドパズルアプリを作りたい！</h2>
             </section>
 
             <!-- 2枚目: なぜアプリを作りたいのか -->
-            <section data-background="https://sozaino.site/archives/13982">
+            <section>
                 <h2 class="fragment fade-in">なぜスライドパズルアプリを作りたいのか？</h2>
-                <p class="fragment fade-in">暇なときにパズルで遊んでいた</p>
-                <p class="fragment fade-in">自分で作れたらもっと楽しいかも！と思った</p>
-                <p class="fragment fade-in">オリジナルのパズルゲームを開発したい</p>
+                <p class="fragment fade-in">パズルゲームが好きで、自分で作ってみたかった</p>
+                <p class="fragment fade-in">プログラミングスキルを活かしてゲーム開発に挑戦</p>
+                <p class="fragment fade-in">オリジナルのスライドパズルを設計する楽しさ</p>
             </section>
 
-            <!-- 3枚目: スライドパズルの基本ルール -->
-            <section data-background="https://sozaino.site/archives/13982">
+            <!-- 3〜5枚目: スライドパズルの基本ルール -->
+            <section>
                 <h2 class="fragment fade-in">スライドパズルの基本ルール</h2>
                 <ul>
-                    <li class="fragment fade-in">🟡 **ゲームの構成:** N×N のグリッドにピースが配置される</li>
+                    <li class="fragment fade-in">🟡 **ゲームの構成:** N×N のグリッドにピースが配置</li>
                     <li class="fragment fade-in">🟥 **空白スペース:** 1つの空白を使ってピースを移動</li>
                     <li class="fragment fade-in">🟩 **操作方法:** 隣のピースのみスライド可能</li>
                     <li class="fragment fade-in">🔵 **クリア条件:** すべてのピースを正しい順番に並べる</li>
                 </ul>
             </section>
 
-            <!-- 4枚目: スライドパズルの種類 -->
-            <section data-background="https://sozaino.site/archives/13982">
-                <h2 class="fragment fade-in">スライドパズルの種類</h2>
+            <!-- 6〜7枚目: スライドパズルの歴史 -->
+            <section>
+                <h2 class="fragment fade-in">スライドパズルの歴史</h2>
+                <p class="fragment fade-in">スライドパズルの起源は **1880年代** にさかのぼる</p>
+                <p class="fragment fade-in">「15パズル」は特に有名で、多くの人に親しまれてきた</p>
+                <p class="fragment fade-in">現代ではデジタル版も登場し、多様なアレンジが可能に</p>
+            </section>
+
+            <!-- 8〜9枚目: 戦略とプレイヤーの考え方 -->
+            <section>
+                <h2 class="fragment fade-in">スライドパズル攻略の戦略</h2>
+                <p class="fragment fade-in">最初に **上段を揃える** とスムーズに解ける</p>
+                <p class="fragment fade-in">次に **左端の列を揃える** ことで簡単に進める</p>
+                <p class="fragment fade-in">空白スペースを活用し、最適な移動ルートを探る</p>
+            </section>
+
+            <!-- 10〜11枚目: 開発の技術的な課題 -->
+            <section>
+                <h2 class="fragment fade-in">ゲーム開発の技術的な課題</h2>
                 <ul>
-                    <li class="fragment fade-in">🟥 **クラシック（15パズル）** - 4×4 グリッド</li>
-                    <li class="fragment fade-in">🟡 **画像パズル** - 絵をスライドで組み立てる</li>
-                    <li class="fragment fade-in">🟩 **ミニ（3×3）** - 初心者向け</li>
-                    <li class="fragment fade-in">🔵 **大規模（10×10）** - 難易度高めの頭脳チャレンジ</li>
-                    <li class="fragment fade-in">🟣 **タイムアタックモード** - 制限時間内にクリア！</li>
+                    <li class="fragment fade-in">ピースの滑らかな移動を実現するには **アニメーション処理** が必要</li>
+                    <li class="fragment fade-in">難易度調整のために **ランダム生成アルゴリズム** を設計</li>
+                    <li class="fragment fade-in">ユーザー体験向上のため、ヒント機能を追加</li>
                 </ul>
             </section>
 
-            <!-- 5枚目: 戦略性 -->
-            <section data-background="https://sozaino.site/archives/13982">
-                <h2 class="fragment fade-in">戦略的なプレイが鍵！</h2>
-                <p class="fragment fade-in">最短手順を考える楽しさ</p>
-                <p class="fragment fade-in">動かす順番が重要</p>
-                <p class="fragment fade-in">スキルを磨いて最速クリア！</p>
+            <!-- 12枚目: スライドパズルの応用 -->
+            <section>
+                <h2 class="fragment fade-in">スライドパズルの応用</h2>
+                <p class="fragment fade-in">🔸 **教育分野:** 記憶力向上・思考力強化に活用</p>
+                <p class="fragment fade-in">🔸 **脳トレ:** 高齢者向けの認知トレーニングツール</p>
+                <p class="fragment fade-in">🔸 **AIとの組み合わせ:** AIが最適解を導き出すアルゴリズム研究</p>
             </section>
 
-            <!-- 6枚目: 開発の過程 -->
-            <section data-background="https://sozaino.site/archives/13982">
-                <h2 class="fragment fade-in">開発の過程</h2>
-                <p class="fragment fade-in">使用技術: JavaScript + HTML + CSS</p>
-                <p class="fragment fade-in">最適化された動作パターンの設計</p>
-            </section>
-
-            <!-- 7枚目: 技術的な課題 -->
-            <section data-background="https://sozaino.site/archives/13982">
-                <h2 class="fragment fade-in">技術的な課題と解決策</h2>
-                <p class="fragment fade-in">スムーズなピース移動の実装</p>
-                <p class="fragment fade-in">難易度調整とユーザー体験の向上</p>
-            </section>
-
-            <!-- 8枚目: ゲームプレイデモ -->
-            <section data-background="https://collepic.net/game/SlidingPuzzle">
-                <h2 class="fragment fade-in">ゲームプレイデモ 🎮</h2>
-                <p class="fragment fade-in">実際のプレイ画面をチェック！</p>
-            </section>
-
-            <!-- 9枚目: スライドパズルのイメージ画像 -->
-            <section data-background="https://kowasekeishin.com/15puzzle/">
-                <h2 class="fragment zoom-in">スライドパズルの世界へようこそ！✨</h2>
-            </section>
-
-            <!-- 10枚目: 今後の展望 -->
-            <section data-background="https://sozaino.site/archives/13982">
+            <!-- 13枚目: 今後の展望 -->
+            <section>
                 <h2 class="fragment fade-in">今後の展望</h2>
                 <p class="fragment fade-in">新ステージの追加予定</p>
                 <p class="fragment fade-in">AIを活用した難易度調整</p>
+                <p class="fragment fade-in">より直感的な操作性を実現するアップデート</p>
             </section>
 
-            <!-- 11枚目: 締めくくり -->
-            <section data-background="https://sozaino.site/archives/13982">
+            <!-- 14枚目: まとめ・質疑応答 -->
+            <section>
                 <h2 class="fragment fade-in">ありがとうございました！</h2>
                 <p class="fragment fade-in">質問があればどうぞ！😊</p>
             </section>
