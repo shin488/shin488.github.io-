@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.css">
     <style>
-        /* カスタムスタイル */
         .reveal h1, .reveal h2 {
             color: red;  
             text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
@@ -41,4 +40,76 @@
             <section>
                 <h2>スライドパズルの基本ルール</h2>
                 <ul>
-                    <li class="fragment fade-in">🟡 **ゲーム
+                    <li class="fragment fade-in">🟡 **ゲームの構成:** N×N のグリッドにピースを配置</li>
+                    <li class="fragment fade-in">🟥 **空白スペース:** 1つの空白を使ってピースを移動</li>
+                    <li class="fragment fade-in">🟩 **操作方法:** 隣のピースのみスライド可能</li>
+                    <li class="fragment fade-in">🔵 **クリア条件:** すべてのピースを正しい順番に並べる</li>
+                </ul>
+            </section>
+
+            <!-- 4枚目: スライドパズルの歴史（画像付き） -->
+            <section>
+                <h2>スライドパズルの歴史</h2>
+                <p class="fragment fade-in">スライドパズルの起源は **1880年代** にさかのぼる</p>
+                <p class="fragment fade-in">「15パズル」は特に有名で、多くの人に親しまれてきた</p>
+                <p class="fragment fade-in">現代ではデジタル版も登場し、多様なアレンジが可能に</p>
+                <div class="image-container">
+                    <img src="https://sugaku-process.net/puzzle/slide-puzzle.html" alt="スライドパズル歴史の画像">
+                </div>
+            </section>
+
+            <!-- 5枚目: スライドパズルの戦略（画像付き） -->
+            <section>
+                <h2>スライドパズルの戦略</h2>
+                <p class="fragment fade-in">効率的なプレイ方法を考えることが鍵！</p>
+                <div class="image-container">
+                    <img src="https://sugaku-process.net/puzzle/slide-puzzle.html" alt="スライドパズル戦略の画像">
+                </div>
+            </section>
+
+            <!-- 6枚目: ゲーム開発の技術的な課題 -->
+            <section>
+                <h2>ゲーム開発の技術的な課題</h2>
+                <ul>
+                    <li class="fragment fade-in">ピースの滑らかな移動を実現するには **アニメーション処理** が必要</li>
+                    <li class="fragment fade-in">難易度調整のために **ランダム生成アルゴリズム** を設計</li>
+                    <li class="fragment fade-in">ユーザー体験向上のため、ヒント機能を追加</li>
+                </ul>
+            </section>
+
+            <!-- 7枚目: スライドパズルの応用（画像付き） -->
+            <section>
+                <h2>スライドパズルの応用</h2>
+                <p class="fragment fade-in">教育・脳トレ・AI活用など幅広く使われる</p>
+                <div class="image-container">
+                    <img src="https://ja.pngtree.com/freebackground/blue-textured-surface-with-a-single-white-jigsaw-puzzle-piece_15222632.html" alt="スライドパズルの応用画像">
+                </div>
+            </section>
+
+            <!-- 8〜13枚目: 今後の展望 -->
+            <section>
+                <h2>今後の展望</h2>
+                <p class="fragment fade-in">新ステージの追加予定</p>
+                <p class="fragment fade-in">AIを活用した難易度調整</p>
+                <p class="fragment fade-in">より直感的な操作性を実現するアップデート</p>
+            </section>
+
+            <!-- 14枚目: まとめ・質疑応答 -->
+            <section>
+                <h2>ありがとうございました！</h2>
+                <p class="fragment fade-in">質問があればどうぞ！😊</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            markdown: { smartypants: true }
+        });
+    </script>
+</body>
+</html>
