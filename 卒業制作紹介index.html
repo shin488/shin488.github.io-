@@ -38,50 +38,18 @@
                 </ul>
             </section>
 
-            <!-- 3枚目: スライドパズルの応用例 -->
+            <!-- 3枚目: スライドパズルの歴史 -->
             <section>
-                <h2>スライドパズルの応用例</h2>
-                <ul>
-                    <li class="fragment fade-in">📖 **教育分野:** 知育ゲームとして子供の学習に活用</li>
-                    <li class="fragment fade-in">🧠 **認知症予防:** 高齢者向けの脳トレとして役立つ</li>
-                    <li class="fragment fade-in">🤖 **AIとの融合:** AIが最適解を導き出すパズル研究</li>
-                </ul>
+                <h2>スライドパズルの歴史</h2>
+                <p class="fragment fade-in">**1874年:** ノイス・チャップマンが考案</p>
+                <p class="fragment fade-in">**1878年:** サムロイドが「15パズル」として発表し世界的に流行</p>
+                <p class="fragment fade-in">**20世紀初頭:** 「Klotski」「華容道」「箱入り娘」などのバリエーションが登場</p>
             </section>
 
-            <!-- 4枚目: スライドパズルの難易度調整 -->
+            <!-- 4〜30枚目: スライドパズルの作り方（詳細解説） -->
             <section>
-                <h2>スライドパズルの難易度調整</h2>
-                <ul>
-                    <li class="fragment fade-in">🟢 **初心者向け（3×3）:** シンプルな構造で遊びやすい</li>
-                    <li class="fragment fade-in">🔵 **中級者向け（4×4）:** 「15パズル」形式で戦略性アップ</li>
-                    <li class="fragment fade-in">🔴 **上級者向け（5×5以上）:** AIを活用した最適解の研究</li>
-                </ul>
-            </section>
-
-            <!-- 5枚目: スライドパズルのデザインとカスタマイズ -->
-            <section>
-                <h2>スライドパズルのデザインとカスタマイズ</h2>
-                <ul>
-                    <li class="fragment fade-in">🖼 **オリジナル画像を使ったパズル作成**</li>
-                    <li class="fragment fade-in">🎨 **カスタムステージの追加**（プレイヤーが自由にデザイン可能）</li>
-                    <li class="fragment fade-in">✨ **アニメーション効果を追加** → 動きをなめらかに！</li>
-                </ul>
-            </section>
-
-            <!-- 6枚目: スライドパズルの競技性 -->
-            <section>
-                <h2>スライドパズルの競技性</h2>
-                <ul>
-                    <li class="fragment fade-in">🌍 **オンライン対戦:** 世界中のプレイヤーと競い合う</li>
-                    <li class="fragment fade-in">🏆 **スコアランキング:** クリアタイムを競うシステム</li>
-                    <li class="fragment fade-in">🎮 **大会開催:** スライドパズルのスピード解法競争</li>
-                </ul>
-            </section>
-
-            <!-- 7〜30枚目: スライドパズルの作り方と発展 -->
-            <section>
-                <h2>スライドパズルの作り方（プログラム編）</h2>
-                <p class="fragment fade-in">📌 **HTMLでグリッドを作成、CSSでデザイン調整**</p>
+                <h2>スライドパズルの作り方（HTML + CSS + JavaScript）</h2>
+                <p class="fragment fade-in">📌 **基本設計:** HTMLでグリッドを作成、CSSでデザイン調整</p>
                 <p class="fragment fade-in">📌 **ピースの配置:** JavaScriptで動的に制御</p>
                 <p class="fragment fade-in">📌 **スライド機能:** 隣のピースと入れ替えるロジックを追加</p>
                 <p class="fragment fade-in">📌 **クリア判定:** 正しく並んだら「クリア！」と表示</p>
@@ -90,7 +58,22 @@
             <section>
                 <h2>コード例（HTML + CSS + JavaScript）</h2>
                 <p class="fragment fade-in">📌 `index.html` に以下のコードを保存すれば、スライドパズルが完成！</p>
-                <a href="https://quick-art.com/d-puzzle.html" target="_blank">サンプルコードを確認</a>
+                <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ja"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;スライドパズル&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;スライドパズル&lt;/h1&gt;
+    &lt;div id="puzzle"&gt;&lt;/div&gt;
+    &lt;button onclick="shuffle()"&gt;シャッフル&lt;/button&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
             </section>
 
             <!-- 30枚目: まとめ・質疑応答 -->
